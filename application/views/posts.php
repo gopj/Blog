@@ -5,6 +5,8 @@
 
 	<title>Posts</title>
 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
 	<style type="text/css"> 
 	::selection{ background-color: #E13300; color: white; }
 	::moz-selection{ background-color: #E13300; color: white; }
@@ -70,9 +72,17 @@
 	<h1>Publicar Post </h1>
 
 	<div id="body">
-		<a href="<?=base_url();?>index.php/posts/getPost/"> Ver Posts</a>
+		
 
-		<form  id ="form" action="<?=base_url();?>index.php/posts/addPost/" method="POST">
+		<ul class="nav nav-tabs">
+		  <li class="active">
+		    <a href="<?=base_url();?>">Crear Posts</a>
+		  </li>
+		  <li><a href="<?=base_url();?>posts/getPost/">Ver Posts</a></li>
+		  
+		</ul>
+
+		<form  id ="form" action="<?=base_url();?>posts/addPost/" method="POST">
 			<p> <?php echo $nombre; ?> : Guardar Posts</p>
 			<p> Nombre: <input name="name" id="name" type="text"> </p> 
 			<p> Titulo: <input name="title" id="title" type="text"> </p> 
@@ -82,7 +92,8 @@
 			Conternido:
 			<p> <textarea name="cont" id="cont" rows = "3" cols = "80"></textarea> </p>
 
-			<input type="submit" value="Guardar Post" id="save">
+			<button class="btn btn-primary" type="submit" value="Guardar Post" id="save"> Guardar Post </button>
+			<!-- <input type="submit" value="Guardar Post" id="save"> -->
 		</form>
 
 	</div>

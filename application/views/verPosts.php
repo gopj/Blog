@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 
-	<title>Welcome</title>
+	<title>Ver posts</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
 	<style type="text/css"> 
 	::selection{ background-color: #E13300; color: white; }
@@ -68,23 +69,22 @@
 <body>
 
 <div id="container">
-	<h1>Publicar Post </h1>
+	<h1>Ver Post </h1>
 
 	<div id="body">
-		<a href="<?=base_url();?>index.php/posts/getPost/"> Ver Posts</a>
+		
 
-		<form  id ="form" action="<?=base_url();?>index.php/posts/addPost/" method="POST">
-			<p> <?php echo $nombre; ?> : Guardar Posts</p>
-			<p> Nombre: <input name="name" id="name" type="text"> </p> 
-			<p> Titulo: <input name="title" id="title" type="text"> </p> 
-			<!-- <p> Contenido: <input name="cont" id="cont" type="textarea"> </p> 	-->
-			
-			
-			Conternido:
-			<p> <textarea name="cont" id="cont" rows = "3" cols = "80"></textarea> </p>
+		<ul class="nav nav-tabs">
+		  <li class="active">
+		    <a href="<?=base_url();?>">Crear Posts</a>
+		  </li>
+		  <li><a href="<?=base_url();?>posts/getPost/">Ver Posts</a></li>
+		  
+		</ul>
 
-			<input type="submit" value="Guardar Post" id="save">
-		</form>
+		
+		<button class="btn btn-primary" type="submit" value="Guardar Post" id="save"> prueba </button>
+		
 
 	</div>
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>

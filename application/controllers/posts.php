@@ -30,24 +30,32 @@ class Posts extends CI_Controller {
 	}
 
 	public function getPost(){
-		echo "<h3> Posts: </h3>";
+		//echo "<h3> Posts: </h3>";
 
 		$query_result = $this->postModel->getPosts();
 		
 		$data = $query_result;
 
-		/*echo "<pre>";
+		echo "<pre>";
 		print_r($data);
-		echo "</pre>";*/
+		echo "</pre>";
 
-
-  		foreach ($data  as $row) {
+		foreach ($data as $row) {
 
   			echo $row['name']."<br>";
   			echo $row['title']."<br>";
   			echo $row['content']."<br>";
 
   		}
+
+		$this->load->view('verPosts', $data);
+
+		
+
+		
+
+
+  		
 		
 	}
 }
