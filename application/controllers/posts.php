@@ -13,11 +13,12 @@ class Posts extends CI_Controller {
 	}
 
 	public function index(){
-		$data["nombre"] = "Chuy";
-		$this->load->view('posts', $data);
+	
+		$this->load->view('newPost');
+
 	}
 
-	public function addPost(){
+	public function newPost(){
 
 		$data = array(
 			"name" => $this->input->post('name'),

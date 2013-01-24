@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 
 	<title>Ver posts</title>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link href="<?=base_url('css/bootstrap.css'); ?>" rel="stylesheet" type="text/css">
 
 	<style type="text/css"> 
 	::selection{ background-color: #E13300; color: white; }
@@ -83,7 +82,7 @@
 		</ul>
 
 		
-		<button class="btn btn-primary" type="submit" value="Guardar Post" id="save"> prueba </button>
+		<button class="btn btn-primary" type="submit" value="Prueba" id="save"> prueba </button>
 		
 
 	</div>
