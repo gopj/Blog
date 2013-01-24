@@ -17,8 +17,8 @@
 					<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Posts <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="<?=base_url();?>posts/">Crear Post</a></li>
-						<li><a href="<?=base_url();?>posts/getPost/">Ver Posts</a></li>
+						<li><a href="<?=base_url();?>posts/"> Crear Post </a></li>
+						<li><a href="<?=base_url();?>posts/getPost/"> Ver Posts </a></li>
 						<li><a href="#">Eliminar Posts</a></li>
 						<li class="divider"></li>
 						<li class="nav-header">Nav header</li>

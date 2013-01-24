@@ -1,20 +1,11 @@
 <?php $this->load->view('includes/navbar'); ?>
+<?php $this->load->view('includes/cssjs'); ?>
 
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 
 	<title>Inicio</title>
-
-	<link href="<?=base_url('css/bootstrap.css'); ?>" rel="stylesheet">
-	<link href="<?=base_url('css/bootstrap-responsive.css'); ?>" rel="stylesheet">
-	<link href="<?=base_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
-	<link href="<?=base_url('css/docs.css'); ?>" rel="stylesheet">
-	<link href="<?=base_url('css/prettify.css'); ?>" rel="stylesheet">
-	<script src="<?=base_url('js/jquery-1.9.0.js');?>"> </script>
-	<script src="<?=base_url('js/bootstrap.js');?>"> </script>
-
-
 
 	<style type="text/css"> 
 	::selection{ background-color: #E13300; color: white; }
@@ -33,37 +24,33 @@
 
 <div id="container">
 
+	<div class="hero-unit">
+		<h1>Blog</h1>
+		<p>Prueba de texto bootstrap.</p>		
+    </div>
 	
 
-		<div class="hero-unit">
-			<h1>Blog</h1>
-			<p>Prueba de texto bootstrap.</p>		
-	    </div>
-		
 
-
-		<div class="btn-group">
-		  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-		    Action
-		    <span class="caret"></span>
-		  </a>
-		  <ul class="dropdown-menu">
-		    <!-- dropdown menu links -->
-		  </ul>
-		</div>
-
-		<ul class="nav nav-tabs">
-		  <li class="active">
-		    <a href="<?=base_url();?>">Crear Posts</a>
-		  </li>
-		  <li><a href="<?=base_url();?>posts/getPost/">Ver Posts</a></li>
-		  
-		</ul>
-
-		
-
+	<div class="btn-group">
+	  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+	    Action
+	    <span class="caret"></span>
+	  </a>
+	  <ul class="dropdown-menu">
+	    <!-- dropdown menu links -->
+	  </ul>
 	</div>
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+
+	<ul class="nav nav-tabs">
+	  <li class="active">
+	    <a href="<?=base_url();?>">Crear Posts</a>
+	  </li>
+	  <li><a href="<?=base_url();?>posts/getPost/">Ver Posts</a></li>
+	  
+	</ul>
+
+		
+	<p> Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 </div>
 
 </body>

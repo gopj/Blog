@@ -27,7 +27,8 @@ class Posts extends CI_Controller {
 		);
 
 		$this->db->insert('posts', $data);
-		echo "Post Creado";
+
+		//$this->load->view('newPost');
 	}
 
 	public function getPost(){
