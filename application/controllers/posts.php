@@ -51,13 +51,21 @@ class Posts extends CI_Controller {
   		}
 
 		$this->load->view('verPosts', $data);
-
-		
-
-		
-
-
-  		
-		
 	}
+
+	public function getDate(){
+		 $dia  = '07';
+		 $mes  = '02';
+		 $year = '2013';
+
+		$fecha = mktime ($mes, 1, $year);
+
+		@$weekNum = date(“W”) – date(“W”,strtotime(date(“2013-02-07”))) + 1;
+
+		@$numberOfWeek = ceil (($dia + (date (“W”, $fecha) - 1)) / 7);
+
+		echo $weekNum;
+
+	}
+
 }
